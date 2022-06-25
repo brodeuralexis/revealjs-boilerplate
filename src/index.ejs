@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The State of Packet Filtering</title>
+
+    <link rel="stylesheet" href="vendor/reveal.js/reset.css">
+		<link rel="stylesheet" href="vendor/reveal.js/reveal.css">
+		<link rel="stylesheet" href="vendor/reveal.js/theme/black.css">
+		<link rel="stylesheet" href="vendor/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <%- include('./slides') %>
+      </div>
+    </div>
+
+    <script src="vendor/reveal.js/reveal.js"></script>
+		<script src="vendor/reveal.js/plugin/notes/notes.js"></script>
+		<script src="vendor/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="vendor/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			})
+		</script>
+  </body>
+</html>
